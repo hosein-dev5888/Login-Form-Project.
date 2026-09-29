@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Loginimg/d2ba6459-2256-4502-92ea-ee4d12a3816f.jpg" />
+  </head>
+  <body>
+    <!--Login Form-->
+    <section>
+      <div class="all-section">
+        <h3 class="title">Login Form</h3>
+        <form id="form">
+          <!--Fields-->
+          <div class="form-group">
+            <label class="lab-text" for="names">Please enter your name.</label>
+            <input
+              type="text"
+              name="full-name"
+              class="field-input"
+              id="names"
+              placeholder="NAME..."
+            />
+          </div>
+          <div class="form-group">
+            <label class="lab-text" for="email">Please enter your email.</label>
+            <input
+              type="email"
+              name="full-email"
+              class="field-input"
+              id="email"
+              placeholder="EMAIL..."
+            />
+          </div>
+          <div class="form-group">
+            <label class="lab-text" for="password"
+              >Please enter your password.</label
+            >
+            <input
+              type="password"
+              name="full-password"
+              class="field-input"
+              id="password"
+              placeholder="PASSWORD..."
+            />
+            <span class="eye-icon" id="toggle-password">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </span>
+          </div>
+          <!--Radio Button-->
+          <div class="radio-container">
+            <label class="radio-tab">
+              <input type="radio" name="auth-mode" value="login" checked />
+              <span>Login</span>
+            </label>
+            <label class="radio-tab">
+              <input type="radio" name="auth-mode" value="signup" />
+              <span>Sign Up</span>
+            </label>
+          </div>
+
+          <!--Button-->
+          <button type="submit" class="submit-btn" id="btn">Enter</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Branding / Footer -->
+    <div class="creator-badge">
+      <span
+        >Coded by
+        <a href="https://instagram.com/hosein90079" target="_blank"
+          >@hosein90079</a
+        ></span
+      >
+    </div>
+
+    <script src="start.js"></script>
+  </body>
+</html>
